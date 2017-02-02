@@ -24,11 +24,11 @@ int max = a;
 
 if (b > max)
     max = b;
-if (c > b)
+if (c > max && c > b)
     max = c;
-if (d > c)
+if (d > max && d > c)
     max = d;
-if (e > d)
+if (e > max && e > d)
     max = e;
 
 printf("Il numero maggiore e' %d\n", max);
