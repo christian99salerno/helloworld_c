@@ -4,7 +4,7 @@ int main ()
 {
 
 int a, b, c, d, e;
-int max;
+int max=0;
 
 printf("Digita a ");
 scanf("%d", &a);
@@ -21,15 +21,17 @@ scanf("%d", &d);
 printf("Digita e ");
 scanf("%d", &e);
 
-max = a;
+if(a>=b && a>=c && a>=d && a>=e) max=a;
 
-if(b > max) max = b;
-else if(c > max) max = c;
-else if(d > max) max = d;
-else if(e > max) max = e;
+else if(b>=a && b>=c && b>=d && b>=e) max=b;
 
-printf("Il maggiore e': %d\n", max);
+else if(c>=a && c>=b && c>=d && c>=e) max=c;
 
+else if(d>=a && d>=b && d>=c && d>=e) max=d;
+
+else max=e;
+
+printf("Il numero massimo e' %d\n",max);
 
 return 0;
 }
