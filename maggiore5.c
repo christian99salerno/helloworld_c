@@ -20,17 +20,18 @@ scanf("%d", &d);
 printf("Digita e ");
 scanf("%d", &e);
 
-if (a==b && b==c && c==d && d==e) printf("I numeri sono uguali\n");
+int max = a;
 
-else if (a>b && a>c && a>d && a>e) printf("Il numero maggiore è %d\n",a);
+if (b > max)
+    max = b;
+if (c > b)
+    max = c;
+if (d > c)
+    max = d;
+if (e > d)
+    max = e;
 
-else if (b>a && b>c && b>d && b>e) printf("Il numero maggiore è %d\n",b);
-
-else if (c>a && c>b && c>d && c>e) printf("Il numero maggiore è %d\n",c);
-
-else if (d>a && d>b && d>c && d>e) printf("Il numero maggiore è %d\n",d);
-
-else if (e>a && e>b && e>c && e>d) printf("Il numero maggiore è %d\n",e);
+printf("Il numero maggiore e' %d\n", max);
 
 return 0;
 }
