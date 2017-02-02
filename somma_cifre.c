@@ -12,7 +12,7 @@ if (num < 100 || num > 999) return -1;
    
 else {
 
-  
+}  
 
 
   return 0;
