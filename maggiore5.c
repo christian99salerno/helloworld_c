@@ -4,7 +4,6 @@ int main ()
 {
 
 int a, b, c, d, e;
-int max=0;
 
 printf("Digita a ");
 scanf("%d", &a);
@@ -21,17 +20,17 @@ scanf("%d", &d);
 printf("Digita e ");
 scanf("%d", &e);
 
-if(a>=b && a>=c && a>=d && a>=e) max=a;
+if (a==b && b==c && c==d && d==e) printf("I numeri sono uguali\n");
 
-else if(b>=a && b>=c && b>=d && b>=e) max=b;
+else if (a>b && a>c && a>d && a>e) printf("Il numero maggiore è %d\n",a);
 
-else if(c>=a && c>=b && c>=d && c>=e) max=c;
+else if (b>a && b>c && b>d && b>e) printf("Il numero maggiore è %d\n",b);
 
-else if(d>=a && d>=b && d>=c && d>=e) max=d;
+else if (c>a && c>b && c>d && c>e) printf("Il numero maggiore è %d\n",c);
 
-else max=e;
+else if (d>a && d>b && d>c && d>e) printf("Il numero maggiore è %d\n",d);
 
-printf("Il numero massimo e' %d\n",max);
+else if (e>a && e>b && e>c && e>d) printf("Il numero maggiore è %d\n",e);
 
 return 0;
 }
