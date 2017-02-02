@@ -3,7 +3,7 @@
 int main ()
 {
 
-printf("Christian\n");
+printf("Christian ");
 printf("Salerno\n");
 
 return 0;
