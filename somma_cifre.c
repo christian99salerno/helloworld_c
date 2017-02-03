@@ -16,7 +16,7 @@ else {
  num = num/10;
  int b=num%10;
  num = num/10;
- int a=num%10;
+ int a=num;
 
    
    
